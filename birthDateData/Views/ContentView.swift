@@ -12,11 +12,12 @@ struct ContentView: View {
     @State public var month: String = ""
     @State public var day: String = ""
     
-    func loadEventsFromAPI() {
-        OnThisDayService.get(month: "1", day: "1", type: "events", completionHandler: [weak self] in Events)
-    }
+    
     
     var body: some View {
+        
+        let a = OnThisDayService.shared.loadEventsFromAPI(month: "1", day: "1")
+        
         
         Text("Hello, world!")
             .padding()

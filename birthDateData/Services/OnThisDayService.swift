@@ -7,37 +7,49 @@
 
 import Foundation
 
-
-struct OnThisDayService {
+class OnThisDayService {
     
-    static func get<T:Codable>(month: String, day: String, type: String, completionHandler: @escaping (T?)-> Void) {
-            let decoder = JSONDecoder()
+    static let shared: OnThisDayService = OnThisDayService()
+    
+    public func loadEventsFromAPI(month: String, day: String) {
+        OnThisDayAPI.get(month: month, day: day, type: "events") {
+            [weak self] (eventsResponseData: EventsResponseData?) in
+            guard let eventsResponseData = eventsResponseData else { return }
+            let eventsViewModel = EventsViewModel(response: eventsResponseData)
             
-        guard let url = URL(string: "\(Constants.PATH)/\(month)/\(day)/\(type).json") else {
-                completionHandler(nil)
-                return
+            DispatchQueue.main.async {
+                print(eventsViewModel.events)
             }
-            
-            var request = URLRequest(url: url)
-            request.httpMethod = "GET"
-
-            URLSession.shared.dataTask(with: request) { (data, response, error) in
-                if (error != nil) {
-                    completionHandler(nil)
-                    return
-                }
-                
-                guard let data = data  else {
-                    completionHandler(nil)
-                    return
-                }
-                do {
-                    let received = try decoder.decode(T.self, from: data)
-                    completionHandler(received)
-                } catch {
-                    completionHandler(nil)
-                }
-            }
-            .resume()
+        
         }
+        return
+    }
+    
+        public func loadDeathsFromAPI(month: String, day: String) {
+            OnThisDayAPI.get(month: month, day: day, type: "deaths") {
+                [weak self] (deathsResponseData: DeathsResponseData?) in
+                guard let deathsResponseData = deathsResponseData, let self = self else { return }
+                let deathsViewModel = DeathsViewModel(response: deathsResponseData)
+                
+                DispatchQueue.main.async {
+                    print(deathsViewModel.deaths)
+                }
+    
+            }
+            return
+        }
+    
+        public func loadBirthsFromAPI(month: String, day: String) {
+            OnThisDayAPI.get(month: month, day: day, type: "births") {
+                [weak self] (birthsResponseData: BirthsResponseData?) in
+                guard let birthsResponseData = birthsResponseData, let self = self else { return }
+                let birthsViewModel = BirthsViewModel(response: birthsResponseData)
+                
+                DispatchQueue.main.async {
+                    print(birthsViewModel.births)
+                }
+            }
+            return
+        }
+    
 }

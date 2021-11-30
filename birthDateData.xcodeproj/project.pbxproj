@@ -11,11 +11,15 @@
 		4E0D3B7727554E9E00EC97E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7627554E9E00EC97E1 /* ContentView.swift */; };
 		4E0D3B7927554EA000EC97E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7827554EA000EC97E1 /* Assets.xcassets */; };
 		4E0D3B7C27554EA000EC97E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7B27554EA000EC97E1 /* Preview Assets.xcassets */; };
-		4E0D3B86275697E200EC97E1 /* OnThisDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B85275697E200EC97E1 /* OnThisDayService.swift */; };
-		4E0D3B882756984E00EC97E1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B872756984E00EC97E1 /* Event.swift */; };
-		4E0D3B8A275698DE00EC97E1 /* Wikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B89275698DE00EC97E1 /* Wikipedia.swift */; };
-		4E0D3B8C2756991200EC97E1 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B8B2756991200EC97E1 /* Events.swift */; };
+		4E0D3B86275697E200EC97E1 /* OnThisDayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */; };
+		4E0D3B882756984E00EC97E1 /* EventsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */; };
 		4E0D3B8F27569D1700EC97E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B8E27569D1700EC97E1 /* Constants.swift */; };
+		4E0D3B922756A90D00EC97E1 /* OnThisDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */; };
+		4E0D3B952756AC2000EC97E1 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B942756AC2000EC97E1 /* EventsViewModel.swift */; };
+		4E0D3B972756AC3000EC97E1 /* DeathsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B962756AC3000EC97E1 /* DeathsViewModel.swift */; };
+		4E0D3B992756AC3B00EC97E1 /* BirthsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */; };
+		4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */; };
+		4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +28,15 @@
 		4E0D3B7627554E9E00EC97E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E0D3B7827554EA000EC97E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0D3B7B27554EA000EC97E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4E0D3B85275697E200EC97E1 /* OnThisDayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayService.swift; sourceTree = "<group>"; };
-		4E0D3B872756984E00EC97E1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		4E0D3B89275698DE00EC97E1 /* Wikipedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia.swift; sourceTree = "<group>"; };
-		4E0D3B8B2756991200EC97E1 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayAPI.swift; sourceTree = "<group>"; };
+		4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsResponseData.swift; sourceTree = "<group>"; };
 		4E0D3B8E27569D1700EC97E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayService.swift; sourceTree = "<group>"; };
+		4E0D3B942756AC2000EC97E1 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		4E0D3B962756AC3000EC97E1 /* DeathsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathsViewModel.swift; sourceTree = "<group>"; };
+		4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsViewModel.swift; sourceTree = "<group>"; };
+		4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathsResponseData.swift; sourceTree = "<group>"; };
+		4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsResponseData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		4E0D3B7327554E9E00EC97E1 /* birthDateData */ = {
 			isa = PBXGroup;
 			children = (
+				4E0D3B932756AC0A00EC97E1 /* ViewModels */,
 				4E0D3B9027569DBF00EC97E1 /* Resources */,
 				4E0D3B84275697D300EC97E1 /* Services */,
 				4E0D3B83275697C600EC97E1 /* Views */,
@@ -81,9 +90,9 @@
 		4E0D3B822756979F00EC97E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4E0D3B872756984E00EC97E1 /* Event.swift */,
-				4E0D3B89275698DE00EC97E1 /* Wikipedia.swift */,
-				4E0D3B8B2756991200EC97E1 /* Events.swift */,
+				4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */,
+				4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */,
+				4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,7 +108,8 @@
 		4E0D3B84275697D300EC97E1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4E0D3B85275697E200EC97E1 /* OnThisDayService.swift */,
+				4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */,
+				4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -112,6 +122,16 @@
 				4E0D3B7827554EA000EC97E1 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E0D3B932756AC0A00EC97E1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4E0D3B942756AC2000EC97E1 /* EventsViewModel.swift */,
+				4E0D3B962756AC3000EC97E1 /* DeathsViewModel.swift */,
+				4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,13 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0D3B8C2756991200EC97E1 /* Events.swift in Sources */,
-				4E0D3B8A275698DE00EC97E1 /* Wikipedia.swift in Sources */,
-				4E0D3B882756984E00EC97E1 /* Event.swift in Sources */,
-				4E0D3B86275697E200EC97E1 /* OnThisDayService.swift in Sources */,
+				4E0D3B882756984E00EC97E1 /* EventsResponseData.swift in Sources */,
+				4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */,
+				4E0D3B86275697E200EC97E1 /* OnThisDayAPI.swift in Sources */,
 				4E0D3B8F27569D1700EC97E1 /* Constants.swift in Sources */,
+				4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */,
+				4E0D3B922756A90D00EC97E1 /* OnThisDayService.swift in Sources */,
+				4E0D3B952756AC2000EC97E1 /* EventsViewModel.swift in Sources */,
+				4E0D3B972756AC3000EC97E1 /* DeathsViewModel.swift in Sources */,
 				4E0D3B7727554E9E00EC97E1 /* ContentView.swift in Sources */,
 				4E0D3B7527554E9E00EC97E1 /* birthDateDataApp.swift in Sources */,
+				4E0D3B992756AC3B00EC97E1 /* BirthsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
