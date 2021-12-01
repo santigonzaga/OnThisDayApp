@@ -11,7 +11,7 @@ struct DeathsViewModel {
 
     var deaths: [DeathViewModel] = []
     
-    struct DeathViewModel {
+    struct DeathViewModel: Hashable {
         var year: String
         var descritpion: String
         var title: String

@@ -11,7 +11,7 @@
 		4E0D3B7727554E9E00EC97E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7627554E9E00EC97E1 /* ContentView.swift */; };
 		4E0D3B7927554EA000EC97E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7827554EA000EC97E1 /* Assets.xcassets */; };
 		4E0D3B7C27554EA000EC97E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0D3B7B27554EA000EC97E1 /* Preview Assets.xcassets */; };
-		4E0D3B86275697E200EC97E1 /* OnThisDayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */; };
+		4E0D3B86275697E200EC97E1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B85275697E200EC97E1 /* APIService.swift */; };
 		4E0D3B882756984E00EC97E1 /* EventsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */; };
 		4E0D3B8F27569D1700EC97E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B8E27569D1700EC97E1 /* Constants.swift */; };
 		4E0D3B922756A90D00EC97E1 /* OnThisDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */; };
@@ -20,6 +20,7 @@
 		4E0D3B992756AC3B00EC97E1 /* BirthsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */; };
 		4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */; };
 		4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */; };
+		DEE9EA532757E50C00EF0D28 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9EA522757E50C00EF0D28 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,7 @@
 		4E0D3B7627554E9E00EC97E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E0D3B7827554EA000EC97E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0D3B7B27554EA000EC97E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayAPI.swift; sourceTree = "<group>"; };
+		4E0D3B85275697E200EC97E1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsResponseData.swift; sourceTree = "<group>"; };
 		4E0D3B8E27569D1700EC97E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayService.swift; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsViewModel.swift; sourceTree = "<group>"; };
 		4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathsResponseData.swift; sourceTree = "<group>"; };
 		4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsResponseData.swift; sourceTree = "<group>"; };
+		DEE9EA522757E50C00EF0D28 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				4E0D3B7627554E9E00EC97E1 /* ContentView.swift */,
+				DEE9EA522757E50C00EF0D28 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,7 +111,7 @@
 		4E0D3B84275697D300EC97E1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4E0D3B85275697E200EC97E1 /* OnThisDayAPI.swift */,
+				4E0D3B85275697E200EC97E1 /* APIService.swift */,
 				4E0D3B912756A90D00EC97E1 /* OnThisDayService.swift */,
 			);
 			path = Services;
@@ -205,8 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0D3B882756984E00EC97E1 /* EventsResponseData.swift in Sources */,
+				DEE9EA532757E50C00EF0D28 /* MainView.swift in Sources */,
 				4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */,
-				4E0D3B86275697E200EC97E1 /* OnThisDayAPI.swift in Sources */,
+				4E0D3B86275697E200EC97E1 /* APIService.swift in Sources */,
 				4E0D3B8F27569D1700EC97E1 /* Constants.swift in Sources */,
 				4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */,
 				4E0D3B922756A90D00EC97E1 /* OnThisDayService.swift in Sources */,

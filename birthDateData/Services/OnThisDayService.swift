@@ -15,7 +15,7 @@ class OnThisDayService {
         
         var result: EventsViewModel = EventsViewModel()
         
-        OnThisDayAPI.get(month: month, day: day, type: "events") {
+        APIService.get(month: month, day: day, type: "events") {
             [weak self] (eventsResponseData: EventsResponseData?) in
             guard let eventsResponseData = eventsResponseData else { return }
             let eventsViewModel = EventsViewModel(response: eventsResponseData)
@@ -31,7 +31,7 @@ class OnThisDayService {
         
         var result: DeathsViewModel = DeathsViewModel()
         
-        OnThisDayAPI.get(month: month, day: day, type: "deaths") {
+        APIService.get(month: month, day: day, type: "deaths") {
             [weak self] (deathsResponseData: DeathsResponseData?) in
             guard let deathsResponseData = deathsResponseData else { return }
             let deathsViewModel = DeathsViewModel(response: deathsResponseData)
@@ -46,7 +46,7 @@ class OnThisDayService {
         
         var result: BirthsViewModel = BirthsViewModel()
         
-        OnThisDayAPI.get(month: month, day: day, type: "births") {
+        APIService.get(month: month, day: day, type: "births") {
             [weak self] (birthsResponseData: BirthsResponseData?) in
             guard let birthsResponseData = birthsResponseData else { return }
             let birthsViewModel = BirthsViewModel(response: birthsResponseData)

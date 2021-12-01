@@ -11,7 +11,7 @@ struct BirthsViewModel {
     
     var births: [BirthViewModel] = []
     
-    struct BirthViewModel {
+    struct BirthViewModel: Hashable {
         var year: String
         var descritpion: String
         var title: String

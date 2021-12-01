@@ -20,5 +20,4 @@ struct EventsResponseData: Codable {
         let title: String
         let wikipedia: String
     }
-    
 }

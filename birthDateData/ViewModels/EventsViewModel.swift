@@ -11,7 +11,7 @@ struct EventsViewModel {
     
     var events: [EventViewModel] = []
     
-    struct EventViewModel {
+    struct EventViewModel: Hashable {
         var year: String
         var descritpion: String
         var title: String
