@@ -25,6 +25,10 @@ struct EventsViewModel {
         }
     }
     
+    init() {
+        
+    }
+    
     init(response: EventsResponseData) {
         for event in response.events {
             var eventViewModel = EventViewModel()

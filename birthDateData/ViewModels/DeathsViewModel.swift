@@ -25,6 +25,10 @@ struct DeathsViewModel {
         }
     }
     
+    init() {
+        
+    }
+    
     init(response: DeathsResponseData) {
         for death in response.deaths {
             var deathViewModel = DeathViewModel()

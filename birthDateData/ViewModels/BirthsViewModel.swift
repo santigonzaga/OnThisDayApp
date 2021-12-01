@@ -25,6 +25,10 @@ struct BirthsViewModel {
         }
     }
     
+    init() {
+        
+    }
+    
     init(response: BirthsResponseData) {
         for birth in response.births {
             var birthViewModel = BirthViewModel()
