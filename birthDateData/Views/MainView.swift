@@ -28,7 +28,7 @@ struct MainView: View {
             }
             
             Button(action: {
-                
+                //passa a data 
             }){
                 ZStack() {
                     Rectangle()

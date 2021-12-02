@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DeathsViewModel {
+class DeathsViewModel {
 
     var deaths: [DeathViewModel] = []
     

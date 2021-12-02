@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BirthsViewModel {
+class BirthsViewModel {
     
     var births: [BirthViewModel] = []
     

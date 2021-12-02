@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EventsViewModel {
+class EventsViewModel {
     
     var events: [EventViewModel] = []
     

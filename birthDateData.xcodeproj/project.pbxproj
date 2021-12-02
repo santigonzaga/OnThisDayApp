@@ -20,6 +20,7 @@
 		4E0D3B992756AC3B00EC97E1 /* BirthsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */; };
 		4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */; };
 		4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */; };
+		4EE7812127593D36006471C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7812027593D36006471C4 /* Extensions.swift */; };
 		DEE9EA532757E50C00EF0D28 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9EA522757E50C00EF0D28 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsViewModel.swift; sourceTree = "<group>"; };
 		4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathsResponseData.swift; sourceTree = "<group>"; };
 		4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsResponseData.swift; sourceTree = "<group>"; };
+		4EE7812027593D36006471C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DEE9EA522757E50C00EF0D28 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				4E0D3B7427554E9E00EC97E1 /* birthDateDataApp.swift */,
 				4E0D3B8E27569D1700EC97E1 /* Constants.swift */,
 				4E0D3B7827554EA000EC97E1 /* Assets.xcassets */,
+				4EE7812027593D36006471C4 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				4E0D3B9B2756B70700EC97E1 /* DeathsResponseData.swift in Sources */,
 				4E0D3B922756A90D00EC97E1 /* OnThisDayService.swift in Sources */,
 				4E0D3B952756AC2000EC97E1 /* EventsViewModel.swift in Sources */,
+				4EE7812127593D36006471C4 /* Extensions.swift in Sources */,
 				4E0D3B972756AC3000EC97E1 /* DeathsViewModel.swift in Sources */,
 				4E0D3B7727554E9E00EC97E1 /* ContentView.swift in Sources */,
 				4E0D3B7527554E9E00EC97E1 /* birthDateDataApp.swift in Sources */,
