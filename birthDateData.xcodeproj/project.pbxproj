@@ -22,6 +22,8 @@
 		4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */; };
 		4EE7812127593D36006471C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7812027593D36006471C4 /* Extensions.swift */; };
 		DEE9EA532757E50C00EF0D28 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9EA522757E50C00EF0D28 /* MainView.swift */; };
+		DEE9EA55275958FF00EF0D28 /* ContentViewModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9EA54275958FF00EF0D28 /* ContentViewModelView.swift */; };
+		DEE9EA5727595D8B00EF0D28 /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9EA5627595D8B00EF0D28 /* AdModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthsResponseData.swift; sourceTree = "<group>"; };
 		4EE7812027593D36006471C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DEE9EA522757E50C00EF0D28 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DEE9EA54275958FF00EF0D28 /* ContentViewModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelView.swift; sourceTree = "<group>"; };
+		DEE9EA5627595D8B00EF0D28 /* AdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				4E0D3B872756984E00EC97E1 /* EventsResponseData.swift */,
 				4E0D3B9A2756B70700EC97E1 /* DeathsResponseData.swift */,
 				4E0D3B9C2756B7E800EC97E1 /* BirthsResponseData.swift */,
+				DEE9EA5627595D8B00EF0D28 /* AdModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				4E0D3B942756AC2000EC97E1 /* EventsViewModel.swift */,
 				4E0D3B962756AC3000EC97E1 /* DeathsViewModel.swift */,
 				4E0D3B982756AC3B00EC97E1 /* BirthsViewModel.swift */,
+				DEE9EA54275958FF00EF0D28 /* ContentViewModelView.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0D3B882756984E00EC97E1 /* EventsResponseData.swift in Sources */,
+				DEE9EA55275958FF00EF0D28 /* ContentViewModelView.swift in Sources */,
 				DEE9EA532757E50C00EF0D28 /* MainView.swift in Sources */,
 				4E0D3B9D2756B7E800EC97E1 /* BirthsResponseData.swift in Sources */,
 				4E0D3B86275697E200EC97E1 /* APIService.swift in Sources */,
@@ -223,6 +230,7 @@
 				4E0D3B7727554E9E00EC97E1 /* ContentView.swift in Sources */,
 				4E0D3B7527554E9E00EC97E1 /* birthDateDataApp.swift in Sources */,
 				4E0D3B992756AC3B00EC97E1 /* BirthsViewModel.swift in Sources */,
+				DEE9EA5727595D8B00EF0D28 /* AdModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

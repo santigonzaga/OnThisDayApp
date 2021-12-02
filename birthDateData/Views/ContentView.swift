@@ -19,7 +19,6 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
         VStack() {
             Picker(selection: $type, label: Text("Type"), content: {
                 Text("Historical events").tag("events")
@@ -29,11 +28,10 @@ struct ContentView: View {
                 Text("Deaths").tag("deaths")
                     .font(.system(size: 18))
             })
-                .pickerStyle(SegmentedPickerStyle())
-                .frame(width: screenSize.width*0.9)
-            
-            
-            
+                .pickerStyle(.segmented)
+                .frame(width: screenSize.width*0.9, height: 100)
+                .padding(.top, 32)
+
             ScrollView(.vertical) {
                 ForEach(viewModel.deaths, id: \.self) { event in
                     HStack(alignment: .center) {
@@ -60,7 +58,9 @@ struct ContentView: View {
         }
         .frame(width: screenSize.width, height: screenSize.height)
         .background(Color("Background"))
+
     }
+    
     
 }
 
@@ -68,41 +68,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-
-class ContentViewModel: ObservableObject {
-    @Published var events: [EventsViewModel.EventViewModel] = []
-    @Published var deaths: [DeathsViewModel.DeathViewModel] = []
-    @Published var births: [BirthsViewModel.BirthViewModel] = []
-    
-    init(date: Date) {
-        loadData(date: date)
-    }
-    
-    func loadData(date: Date) {
-        
-        let component = date.get(.day, .month)
-        let month: String = "\(component.month ?? 1)"
-        let day: String = "\(component.day ?? 1)"
-        
-        OnThisDayService.shared.loadEventsFromAPI(month: month, day: day) { eventViewModel in
-            DispatchQueue.main.async {
-                self.events = eventViewModel.events
-            }
-        }
-        
-        OnThisDayService.shared.loadDeathsFromAPI(month: month, day: day) { deathViewModel in
-            DispatchQueue.main.async {
-                self.deaths = deathViewModel.deaths
-            }
-        }
-        
-        OnThisDayService.shared.loadBirthsFromAPI(month: month, day: day) { birthViewModel in
-            DispatchQueue.main.async {
-                self.births = birthViewModel.births
-            }
-        }
-    }
-    
 }
