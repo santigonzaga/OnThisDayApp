@@ -107,9 +107,11 @@ struct ContentView: View {
         }
         .frame(width: screenSize.width, height: screenSize.height)
         .background(Color("Background"))
+        .onAppear {
+            print("ä")
+        }
 
     }
-    
     
 }
 
