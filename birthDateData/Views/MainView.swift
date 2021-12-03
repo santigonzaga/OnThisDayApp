@@ -11,7 +11,8 @@ struct MainView: View {
     
     @State var selectedDate = Date()
     let screenSize: CGSize = UIScreen.main.bounds.size
-    let ads: [AdModel] = [AdModel(link: "https://apps.apple.com/br/app/moodi/id1568151935", image: "Moodi"), AdModel(link: "https://apps.apple.com/br/app/avalanche-run/id1585684015", image: "AvalancheRun"), AdModel(link: "https://apps.apple.com/br/app/simplepacking/id1581175643", image: "SimplePacking"), AdModel(link: "https://apps.apple.com/br/app/devtopia-idle-game/id1568154053", image: "Devtopia")]
+    let ads: [AdModel] = [AdModel(link: "https://apps.apple.com/br/app/moodi/id1568151935?l=en", image: "Moodi"), AdModel(link: "https://apps.apple.com/br/app/avalanche-run/id1585684015?l=en", image: "AvalancheRun"), AdModel(link: "https://apps.apple.com/br/app/simplepacking/id1581175643?l=en", image: "SimplePacking"), AdModel(link: "https://apps.apple.com/app/devtopia-idle-game/id1568154053", image: "Devtopia")]
+    var index: Int = 0
     
     var body: some View {
         
@@ -29,7 +30,7 @@ struct MainView: View {
                         .font(.system(size: 38, weight: .bold))
                 }
                 
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ContentView(selectedDate: selectedDate)) {
                     ZStack() {
                         Rectangle()
                             .foregroundColor(.red)
@@ -43,14 +44,16 @@ struct MainView: View {
                 }
                 
                 Button(action: {
-                    if let url = URL(string: ads[0].link) {
+                    if let url = URL(string: ads[index].link) {
                         UIApplication.shared.open(url)
                     }
                 }){
-                    Image(ads[0].image)
+                    Image(ads[index].image)
                         .frame(width: 290, height: 80, alignment: .center)
+                        .padding(.top, 200)
                 }
-
+                
+                
             }
             .frame(width: screenSize.width, height: screenSize.height)
             .background(Color("Background"))
